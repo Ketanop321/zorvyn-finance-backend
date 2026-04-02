@@ -1,0 +1,124 @@
+// ─────────────────────────────────────────────────────────────────────────────
+// Zorvyn FinTech — Prisma Database Schema
+// ─────────────────────────────────────────────────────────────────────────────
+// IMPORTANT: We use Decimal (not Float) for ALL monetary values.
+// WHY: IEEE 754 floating-point arithmetic has precision errors.
+//   Example: 0.1 + 0.2 = 0.30000000000000004 in JavaScript.
+//   In FinTech, even a 1-paisa discrepancy is unacceptable and can cause
+//   regulatory issues. Decimal maps to PostgreSQL NUMERIC — exact precision.
+// ─────────────────────────────────────────────────────────────────────────────
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ─── Enums ───────────────────────────────────────────────────────────────────
+
+enum Role {
+  ADMIN
+  ANALYST
+  VIEWER
+}
+
+enum UserStatus {
+  ACTIVE
+  INACTIVE
+}
+
+enum TransactionType {
+  INCOME
+  EXPENSE
+}
+
+// ─── Models ──────────────────────────────────────────────────────────────────
+
+model User {
+  id        String     @id @default(uuid())
+  name      String
+  email     String     @unique
+  password  String     // bcrypt hashed — NEVER store plaintext
+  role      Role       @default(VIEWER)
+  status    UserStatus @default(ACTIVE)
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+
+  // Relations
+  transactions   Transaction[] @relation("TransactionCreator")
+  deletedTxns    Transaction[] @relation("TransactionDeleter")
+  refreshTokens  RefreshToken[]
+  auditLogs      AuditLog[]
+
+  @@map("users")
+}
+
+model Transaction {
+  id              String          @id @default(uuid())
+  amount          Decimal         @db.Decimal(15, 2) // 15 digits, 2 decimal places — handles up to ₹99,999,999,999.99
+  type            TransactionType
+  category        String
+  date            DateTime
+  description     String?
+  idempotencyKey  String          @unique // Prevents duplicate transaction submissions — critical in payments
+  
+  // Soft delete fields — FinTech NEVER hard-deletes financial records
+  isDeleted       Boolean         @default(false)
+  deletedAt       DateTime?
+  
+  // Audit fields — who did what and when
+  createdBy       String
+  deletedBy       String?
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
+
+  // Relations
+  creator         User            @relation("TransactionCreator", fields: [createdBy], references: [id])
+  deleter         User?           @relation("TransactionDeleter", fields: [deletedBy], references: [id])
+
+  @@index([type])
+  @@index([category])
+  @@index([date])
+  @@index([isDeleted])
+  @@index([createdBy])
+  @@map("transactions")
+}
+
+model RefreshToken {
+  id        String   @id @default(uuid())
+  token     String   @unique
+  userId    String
+  expiresAt DateTime
+  revoked   Boolean  @default(false) // Set to true on logout — token can be killed remotely
+  createdAt DateTime @default(now())
+
+  // Relations
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([token])
+  @@map("refresh_tokens")
+}
+
+model AuditLog {
+  id          String   @id @default(uuid())
+  action      String   // e.g., CREATE_TRANSACTION, DELETE_USER, UPDATE_USER_STATUS
+  performedBy String   // userId of who triggered the action
+  targetId    String?  // ID of the affected record (transaction ID, user ID, etc.)
+  targetType  String?  // Model name: "Transaction", "User"
+  ipAddress   String?
+  userAgent   String?
+  metadata    Json?    // Stores before/after diff for audit trail reconstruction
+  createdAt   DateTime @default(now())
+
+  // Relations
+  user        User     @relation(fields: [performedBy], references: [id])
+
+  @@index([performedBy])
+  @@index([action])
+  @@index([createdAt])
+  @@map("audit_logs")
+}

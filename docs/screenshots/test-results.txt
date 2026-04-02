@@ -1,0 +1,648 @@
+﻿
+≡ƒöº Running migrations on test database...
+Γ£à Test database migrations complete
+
+node.exe : PASS tests/auth.test.js
+At C:\Program Files\nodejs\npx.ps1:29 char:3
++   & $NODE_EXE $NPX_CLI_JS $args
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (PASS tests/auth.test.js:String) [], Remo 
+   teException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  ΓùÅ Console
+
+    console.log
+      20:24:55 [[32minfo[39m]: [32m[0mPOST /api/auth/register [32m201[0m 
+391.062 ms - 502[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:24:56 [[32minfo[39m]: [32m[0mPOST /api/auth/register [32m201[0m 
+239.682 ms - 502[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:24:56 [[31merror[39m]: AppError: An account with this email already exists.
+          at Function.Object.<anonymous>.AppError.conflict 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\src\lib\AppError.js:58:3)
+          at Object.conflict 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\src\services\auth.service.js:29:20)
+          at register 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\src\controllers\auth.controller.js:23:47)
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:24:56 [[32minfo[39m]: [32m[0mPOST /api/auth/register [33m409[0m 24.399 
+ms - 90[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:24:56 [[32minfo[39m]: [32m[0mPOST /api/auth/register [33m400[0m 0.607 
+ms - 177[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:24:56 [[32minfo[39m]: [32m[0mPOST /api/auth/register [33m400[0m 0.499 
+ms - 195[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:24:56 [[32minfo[39m]: [32m[0mPOST /api/auth/register [33m400[0m 0.588 
+ms - 190[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:24:56 [[32minfo[39m]: [32m[0mPOST /api/auth/register [32m201[0m 
+235.334 ms - 502[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:24:56 [[32minfo[39m]: [32m[0mPOST /api/auth/login [32m200[0m 235.716 
+ms - 451[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:24:57 [[32minfo[39m]: [32m[0mPOST /api/auth/register [32m201[0m 
+238.913 ms - 502[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:24:57 [[31merror[39m]: AppError: Invalid email or password
+          at Function.Object.<anonymous>.AppError.unauthorized 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\src\lib\AppError.js:49:3)
+          at Object.unauthorized [as login] 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\src\services\auth.service.js:63:20)
+          at login 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\src\controllers\auth.controller.js:36:47)
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:24:57 [[32minfo[39m]: [32m[0mPOST /api/auth/login [33m401[0m 230.465 
+ms - 77[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:24:57 [[32minfo[39m]: [32m[0mPOST /api/auth/register [32m201[0m 
+233.573 ms - 502[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:24:57 [[31merror[39m]: AppError: Invalid email or password
+          at Function.Object.<anonymous>.AppError.unauthorized 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\src\lib\AppError.js:49:3)
+          at Object.unauthorized [as login] 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\src\services\auth.service.js:63:20)
+          at login 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\src\controllers\auth.controller.js:36:47)
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:24:57 [[32minfo[39m]: [32m[0mPOST /api/auth/login [33m401[0m 2.034 ms 
+- 77[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:24:57 [[32minfo[39m]: [32m[0mPOST /api/auth/register [32m201[0m 
+274.322 ms - 502[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:24:57 [[32minfo[39m]: [32m[0mPOST /api/auth/login [33m400[0m 0.444 ms 
+- 164[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+PASS tests/rbac.test.js
+  ΓùÅ Console
+
+    console.log
+      20:24:58 [[32minfo[39m]: [32m[0mPOST /api/auth/register [32m201[0m 
+362.611 ms - 495[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:24:58 [[32minfo[39m]: [32m[0mPOST /api/auth/login [32m200[0m 240.935 
+ms - 444[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:24:58 [[32minfo[39m]: [32m[0mPOST /api/auth/register [32m201[0m 
+248.536 ms - 504[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:24:59 [[32minfo[39m]: [32m[0mPOST /api/auth/login [32m200[0m 249.530 
+ms - 453[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:24:59 [[32minfo[39m]: [32m[0mPOST /api/auth/register [32m201[0m 
+246.846 ms - 500[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:24:59 [[32minfo[39m]: [32m[0mPOST /api/auth/login [32m200[0m 247.405 
+ms - 449[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:24:59 [[32minfo[39m]: [32m[0mPOST /api/transactions [32m201[0m 33.669 
+ms - 563[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:24:59 [[31merror[39m]: AppError: This action requires one of the following 
+roles: ADMIN
+          at Function.Object.<anonymous>.AppError.forbidden 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\src\lib\AppError.js:52:3)
+          at forbidden 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\src\middleware\role.middleware.js:39:18)
+          at newFn (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express-async-
+errors\index.js:16:20)
+          at Layer.handle [as handle_request] 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express\lib\router\layer.js:95:5)
+          at next (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express\lib\rou
+ter\route.js:149:13)
+          at Route.dispatch (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\expre
+ss\lib\router\route.js:119:3)
+          at newFn (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express-async-
+errors\index.js:16:20)
+          at Layer.handle [as handle_request] 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express\lib\router\layer.js:95:5)
+          at 
+C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express\lib\router\index.js:284:15
+          at Function.process_params (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modu
+les\express\lib\router\index.js:346:12)
+          at next (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express\lib\rou
+ter\index.js:280:10)
+          at next 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\src\middleware\auth.middleware.js:61:10)
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:24:59 [[32minfo[39m]: [32m[0mPOST /api/transactions [33m403[0m 38.651 
+ms - 103[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:24:59 [[31merror[39m]: AppError: This action requires one of the following 
+roles: ADMIN
+          at Function.Object.<anonymous>.AppError.forbidden 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\src\lib\AppError.js:52:3)
+          at forbidden 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\src\middleware\role.middleware.js:39:18)
+          at newFn (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express-async-
+errors\index.js:16:20)
+          at Layer.handle [as handle_request] 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express\lib\router\layer.js:95:5)
+          at next (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express\lib\rou
+ter\route.js:149:13)
+          at Route.dispatch (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\expre
+ss\lib\router\route.js:119:3)
+          at newFn (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express-async-
+errors\index.js:16:20)
+          at Layer.handle [as handle_request] 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express\lib\router\layer.js:95:5)
+          at 
+C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express\lib\router\index.js:284:15
+          at Function.process_params (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modu
+les\express\lib\router\index.js:346:12)
+          at next (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express\lib\rou
+ter\index.js:280:10)
+          at next 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\src\middleware\auth.middleware.js:61:10)
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:24:59 [[32minfo[39m]: [32m[0mPOST /api/transactions [33m403[0m 2.709 
+ms - 103[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:24:59 [[31merror[39m]: AppError: No authentication token provided
+          at Function.Object.<anonymous>.AppError.unauthorized 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\src\lib\AppError.js:49:3)
+          at unauthorized 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\src\middleware\auth.middleware.js:29:26)
+          at newFn (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express-async-
+errors\index.js:16:20)
+          at Layer.handle [as handle_request] 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express\lib\router\layer.js:95:5)
+          at trim_prefix (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express\
+lib\router\index.js:328:13)
+          at 
+C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express\lib\router\index.js:286:9
+          at Function.process_params (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modu
+les\express\lib\router\index.js:346:12)
+          at next (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express\lib\rou
+ter\index.js:280:10)
+          at Function.handle (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\expr
+ess\lib\router\index.js:175:3)
+          at router (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express\lib\r
+outer\index.js:47:12)
+          at newFn (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express-async-
+errors\index.js:16:20)
+          at Layer.handle [as handle_request] 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express\lib\router\layer.js:95:5)
+          at trim_prefix (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express\
+lib\router\index.js:328:13)
+          at 
+C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express\lib\router\index.js:286:9
+          at Function.process_params (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modu
+les\express\lib\router\index.js:346:12)
+          at next (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express\lib\rou
+ter\index.js:280:10)
+          at C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express-rate-limit\di
+st\index.cjs:807:7
+          at processTicksAndRejections (node:internal/process/task_queues:105:5)
+          at C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express-rate-limit\di
+st\index.cjs:691:5
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:24:59 [[32minfo[39m]: [32m[0mPOST /api/transactions [33m401[0m 1.363 
+ms - 84[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:24:59 [[32minfo[39m]: [32m[0mGET /api/transactions [32m200[0m 8.131 ms 
+- 628[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:24:59 [[32minfo[39m]: [32m[0mGET /api/transactions [32m200[0m 3.582 ms 
+- 628[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:24:59 [[31merror[39m]: AppError: This action requires one of the following 
+roles: ADMIN, ANALYST
+          at Function.Object.<anonymous>.AppError.forbidden 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\src\lib\AppError.js:52:3)
+          at forbidden 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\src\middleware\role.middleware.js:39:18)
+          at newFn (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express-async-
+errors\index.js:16:20)
+          at Layer.handle [as handle_request] 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express\lib\router\layer.js:95:5)
+          at next (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express\lib\rou
+ter\route.js:149:13)
+          at Route.dispatch (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\expre
+ss\lib\router\route.js:119:3)
+          at newFn (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express-async-
+errors\index.js:16:20)
+          at Layer.handle [as handle_request] 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express\lib\router\layer.js:95:5)
+          at 
+C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express\lib\router\index.js:284:15
+          at Function.process_params (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modu
+les\express\lib\router\index.js:346:12)
+          at next (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express\lib\rou
+ter\index.js:280:10)
+          at next 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\src\middleware\auth.middleware.js:61:10)
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:24:59 [[32minfo[39m]: [32m[0mGET /api/transactions [33m403[0m 2.911 ms 
+- 112[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:24:59 [[32minfo[39m]: [32m[0mGET /api/users [32m200[0m 3.439 ms - 
+756[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:24:59 [[31merror[39m]: AppError: This action requires one of the following 
+roles: ADMIN
+          at Function.Object.<anonymous>.AppError.forbidden 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\src\lib\AppError.js:52:3)
+          at forbidden 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\src\middleware\role.middleware.js:39:18)
+          at newFn (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express-async-
+errors\index.js:16:20)
+          at Layer.handle [as handle_request] 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express\lib\router\layer.js:95:5)
+          at trim_prefix (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express\
+lib\router\index.js:328:13)
+          at 
+C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express\lib\router\index.js:286:9
+          at Function.process_params (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modu
+les\express\lib\router\index.js:346:12)
+          at next (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express\lib\rou
+ter\index.js:280:10)
+          at next 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\src\middleware\auth.middleware.js:61:10)
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:24:59 [[32minfo[39m]: [32m[0mGET /api/users [33m403[0m 2.872 ms - 
+103[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:24:59 [[31merror[39m]: AppError: This action requires one of the following 
+roles: ADMIN
+          at Function.Object.<anonymous>.AppError.forbidden 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\src\lib\AppError.js:52:3)
+          at forbidden 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\src\middleware\role.middleware.js:39:18)
+          at newFn (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express-async-
+errors\index.js:16:20)
+          at Layer.handle [as handle_request] 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express\lib\router\layer.js:95:5)
+          at trim_prefix (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express\
+lib\router\index.js:328:13)
+          at 
+C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express\lib\router\index.js:286:9
+          at Function.process_params (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modu
+les\express\lib\router\index.js:346:12)
+          at next (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express\lib\rou
+ter\index.js:280:10)
+          at next 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\src\middleware\auth.middleware.js:61:10)
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:24:59 [[32minfo[39m]: [32m[0mGET /api/users [33m403[0m 3.373 ms - 
+103[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:24:59 [[32minfo[39m]: [32m[0mGET /api/dashboard/summary [32m200[0m 
+6.823 ms - 190[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:24:59 [[32minfo[39m]: [32m[0mGET /api/dashboard/summary [32m200[0m 
+3.694 ms - 190[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+PASS tests/transaction.test.js
+  ΓùÅ Console
+
+    console.log
+      20:25:00 [[32minfo[39m]: [32m[0mPOST /api/auth/register [32m201[0m 
+288.311 ms - 491[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:25:00 [[32minfo[39m]: [32m[0mPOST /api/auth/login [32m200[0m 243.125 
+ms - 440[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:25:00 [[32minfo[39m]: [32m[0mPOST /api/transactions [33m400[0m 2.048 
+ms - 160[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:25:00 [[32minfo[39m]: [32m[0mPOST /api/transactions [33m400[0m 1.738 
+ms - 174[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:25:00 [[32minfo[39m]: [32m[0mPOST /api/transactions [33m400[0m 1.638 
+ms - 174[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:25:00 [[32minfo[39m]: [32m[0mPOST /api/transactions [33m400[0m 1.793 
+ms - 208[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:25:00 [[31merror[39m]: AppError: X-Idempotency-Key header is required for 
+transaction creation
+          at Function.Object.<anonymous>.AppError.badRequest 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\src\lib\AppError.js:46:3)
+          at Object.badRequest [as createTransaction] 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\src\services\transaction.service.js:49:20)
+          at createTransaction (C:\Users\ketan\OneDrive\Desktop\zoryvn\src\controllers
+\transaction.controller.js:17:65)
+          at newFn (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express-async-
+errors\index.js:16:20)
+          at Layer.handle [as handle_request] 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express\lib\router\layer.js:95:5)
+          at next (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express\lib\rou
+ter\route.js:149:13)
+          at next 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\src\middleware\audit.middleware.js:72:12)
+          at newFn (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express-async-
+errors\index.js:16:20)
+          at Layer.handle [as handle_request] 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express\lib\router\layer.js:95:5)
+          at next (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express\lib\rou
+ter\route.js:149:13)
+          at next 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\src\middleware\validate.middleware.js:48:12)
+          at newFn (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express-async-
+errors\index.js:16:20)
+          at Layer.handle [as handle_request] 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express\lib\router\layer.js:95:5)
+          at next (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express\lib\rou
+ter\route.js:149:13)
+          at next 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\src\middleware\role.middleware.js:45:12)
+          at newFn (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express-async-
+errors\index.js:16:20)
+          at Layer.handle [as handle_request] 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express\lib\router\layer.js:95:5)
+          at next (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express\lib\rou
+ter\route.js:149:13)
+          at Route.dispatch (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\expre
+ss\lib\router\route.js:119:3)
+          at newFn (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express-async-
+errors\index.js:16:20)
+          at Layer.handle [as handle_request] 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express\lib\router\layer.js:95:5)
+          at 
+C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express\lib\router\index.js:284:15
+          at Function.process_params (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modu
+les\express\lib\router\index.js:346:12)
+          at next (C:\Users\ketan\OneDrive\Desktop\zoryvn\node_modules\express\lib\rou
+ter\index.js:280:10)
+          at next 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\src\middleware\auth.middleware.js:61:10)
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:25:00 [[32minfo[39m]: [32m[0mPOST /api/transactions [33m400[0m 8.737 
+ms - 112[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:25:00 [[32minfo[39m]: [32m[0mPOST /api/transactions [32m201[0m 11.991 
+ms - 573[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:25:00 [[32minfo[39m]: [32m[0mPOST /api/transactions [32m200[0m 2.382 
+ms - 366[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:25:00 [[32minfo[39m]: [32m[0mPOST /api/transactions [32m201[0m 6.020 
+ms - 573[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:25:00 [[32minfo[39m]: [32m[0mDELETE 
+/api/transactions/bf2b3e71-e621-4610-9556-4ea1122c3993 [32m200[0m 6.695 ms - 
+526[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:25:00 [[31merror[39m]: AppError: Transaction not found
+          at Function.Object.<anonymous>.AppError.notFound 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\src\lib\AppError.js:55:3)
+          at Object.notFound [as getTransaction] 
+(C:\Users\ketan\OneDrive\Desktop\zoryvn\src\services\transaction.service.js:125:36)
+          at getTransaction (C:\Users\ketan\OneDrive\Desktop\zoryvn\src\controllers\tr
+ansaction.controller.js:42:23)
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:25:00 [[32minfo[39m]: [32m[0mGET 
+/api/transactions/bf2b3e71-e621-4610-9556-4ea1122c3993 [33m404[0m 3.916 ms - 
+70[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:25:00 [[32minfo[39m]: [32m[0mPOST /api/transactions [32m201[0m 4.540 
+ms - 572[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:25:00 [[32minfo[39m]: [32m[0mDELETE 
+/api/transactions/7c72d746-f461-454d-80c9-11f6e8c2d511 [32m200[0m 4.239 ms - 
+525[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:25:00 [[32minfo[39m]: [32m[0mGET /api/transactions [32m200[0m 29.594 
+ms - 638[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+PASS tests/dashboard.test.js
+  ΓùÅ Console
+
+    console.log
+      20:25:01 [[32minfo[39m]: [32m[0mPOST /api/auth/register [32m201[0m 
+286.220 ms - 495[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:25:01 [[32minfo[39m]: [32m[0mPOST /api/auth/login [32m200[0m 244.361 
+ms - 444[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:25:01 [[32minfo[39m]: [32m[0mPOST /api/transactions [32m201[0m 12.109 
+ms - 564[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:25:01 [[32minfo[39m]: [32m[0mPOST /api/transactions [32m201[0m 7.763 
+ms - 568[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:25:01 [[32minfo[39m]: [32m[0mGET /api/dashboard/summary [32m200[0m 
+2.963 ms - 195[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:25:01 [[32minfo[39m]: [32m[0mGET /api/dashboard/summary [32m200[0m 
+2.355 ms - 195[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:25:01 [[32minfo[39m]: [32m[0mGET /api/dashboard/category-breakdown 
+[32m200[0m 4.525 ms - 196[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:25:01 [[32minfo[39m]: [32m[0mGET /api/dashboard/monthly-trend 
+[32m200[0m 5.492 ms - 402[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+    console.log
+      20:25:01 [[32minfo[39m]: [32m[0mGET /api/dashboard/recent-activity 
+[32m200[0m 3.637 ms - 603[0m[39m
+
+      at Console.log (node_modules/winston/lib/winston/transports/console.js:87:23)
+
+
+Test Suites: 4 passed, 4 total
+Tests:       34 passed, 34 total
+Snapshots:   0 total
+Time:        7.81 s, estimated 24 s
+Ran all test suites.

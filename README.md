@@ -10,6 +10,14 @@
 
 ---
 
+## 🟢 Live Deployment
+The API is currently deployed and running live on Render:
+**👉 [https://zorvyn-finance-backend-xpm1.onrender.com](https://zorvyn-finance-backend-xpm1.onrender.com)**
+
+*(You can verify it by clicking the link above to hit the `/health` endpoint).*
+
+---
+
 ## 📋 Project Overview
 
 This backend powers a multi-role finance dashboard for startups and SMEs. It handles:
